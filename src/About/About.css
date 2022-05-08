@@ -1,0 +1,143 @@
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0;
+    /* opacity: 5;
+    transform: translateY(1px); */
+}
+.fade-in {
+    opacity: 0;
+    /* -webkit-transform: translateY(80px);
+    transform: translateY(80px); */
+    transition: all .8s ease;
+}
+.about-me-parent {
+    max-width: 1000px;
+    /* width: 70%; */
+}
+.about-me-details {
+    width: 48%;
+    text-align: justify;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-me-description {
+    font-size: 1.4rem;
+}
+.about-me-options{
+    
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 4vh;
+    
+}
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 50px;
+}
+.screen-heading {
+    font-size: 50px;
+    color: #1f2235;
+    font-family: "Poppins Bold";
+    font-weight: 500;
+}
+.screen-sub-heading {
+    letter-spacing: 4px;
+    margin: 8px 0 10px;
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 800;
+}
+.heading-seperator {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 180px;
+    margin: 10px 0 0;
+}
+.seperator-line {
+    width: 100%;
+    height: 2px;
+    background-color: #1f221f;
+}
+
+.seperator-blob {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.seperator-blob div {
+    width: 35px;
+    border-radius: 10px;
+    background-color: var(--dark-orange);
+}
+.about-me-card {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 20px -2px #1f2235;
+}
+.about-me-profile {
+    width: 50%;
+    background-image: url("../asserts/me.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 587px;
+}
+.about-me-highlights {
+    margin: 80px 0;
+}
+.highlighted-btn{
+    margin: 0 0 0 20px ;
+   }
+.highlighted-btn:hover{
+    margin: 0 0 0 28px;
+    background-color: cornsilk;
+    color: #111;
+}  
+  
+@media only screen and (max-width: 1110px){
+    .about-me-parent {
+        width: 88%;
+    }
+}
+@media only screen and (max-width: 1110px){
+
+    .about-me-profile {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1110px){
+
+    .about-me-details {
+        width: 100%;
+    }
+    .about-me-options{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 1vh;
+    }
+}
+@media only screen and (max-width: 400px){
+    .about-me-options{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* position: relative;
+        top: 1vh; */
+    }
+}
